@@ -19,10 +19,11 @@ filetype plugin indent on
 " End of Vundle configuration
 
 " Use solarized colorscheme for markdown else jellybeans
+set t_Co=256
 autocmd FileType * if &filetype == 'pandoc' || &filetype == 'tex' | colorscheme solarized | else | colorscheme jellybeans | endif
 autocmd FileType tex Goyo
 autocmd FileType pandoc Goyo
-syntax enable
+syntax on
 set number
 
 set tabstop=8 expandtab shiftwidth=4 softtabstop=4	
